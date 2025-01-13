@@ -55,7 +55,7 @@ const Navbar = () => {
             hidden
           />
         </NavLink>
-        <NavLink to="http://localhost:5174" target="_blank">
+        <NavLink to="https://dr-appointment-admin.vercel.app" target="_blank">
           <li className="border px-3 py-1 rounded-full border-gray-500 text-gray-600">
             Admin Panel
           </li>
@@ -142,7 +142,7 @@ const Navbar = () => {
             </NavLink>
             <NavLink
               onClick={() => setShowMenu(false)}
-              to="http://localhost:5174"
+              to="https://dr-appointment-admin.vercel.app"
               target="_blank"
             >
               <p className="px-4 py-2 border rounded-xl inline-block hover:bg-teal-200">
