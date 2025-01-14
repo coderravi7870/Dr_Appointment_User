@@ -103,7 +103,7 @@ const Appoinment = () => {
       let month = date.getMonth() + 1;
       let year = date.getFullYear();
       const slotDate = `${day}-${month}-${year}`;
-
+      setLoadingAppointment(true);
       const { data } = await axios.post(
         `${backendUrl}/api/user/book-appointment`,
         { docId, slotDate, slotTime },
@@ -120,6 +120,8 @@ const Appoinment = () => {
     } catch (error) {
       console.log(error);
       toast.error("Failed to book appointment");
+    }finally{
+      setLoadingAppointment(false);
     }
   };
 
