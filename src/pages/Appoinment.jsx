@@ -29,6 +29,8 @@ const Appoinment = () => {
   const [slotIndex, setSlotIndex] = useState(0);
   const [slotTime, setSlotTime] = useState("");
 
+  const [loadingAppointment,setLoadingAppointment] = useState(false);
+
   const fetchDocInfo = async () => {
     const docInfo = doctors.find((doc) => doc._id === docId);
     setDocInfo(docInfo);
