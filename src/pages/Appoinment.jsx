@@ -5,6 +5,7 @@ import { assets } from "../assets/assets";
 import RelatedDoctor from "../components/RelatedDoctor";
 import { toast } from "react-toastify";
 import axios from "axios";
+import Loader from "../loader/Loader";
 // import { doctors } from "../assets/assets";
 
 const Appoinment = () => {
@@ -231,7 +232,9 @@ const Appoinment = () => {
           onClick={bookAppointment}
           className="bg-teal-600 text-white text-sm font-light px-14 py-3 rounded-full my-6"
         >
-          Book an appointment
+          {
+            loadingAppointment ? <Loader height={22}/> : "Book appointment"
+          }
         </button>
 
         {/* ---------Listing related Doctor---------- */}

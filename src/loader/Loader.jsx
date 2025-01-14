@@ -1,12 +1,12 @@
 import React from 'react';
 import { ColorRing } from 'react-loader-spinner';
 
-const Loader = () => {
+const Loader = ({width=40,height = 40}) => {
   return (
     <ColorRing
       visible={true}
-      height="40"
-      width="40"
+      height={height}
+      width={width}
       ariaLabel="color-ring-loading"
       wrapperStyle={{}}
       wrapperClass="color-ring-wrapper"

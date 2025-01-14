@@ -122,7 +122,7 @@ const Login = () => {
           className="bg-teal-600 hover:bg-teal-700 text-white w-full py-2 rounded-md text-base"
         >
           {loading ? (
-            <div className="w-full flex justify-center"><Loader /></div>
+            <div className="w-full flex justify-center"><Loader height={24} /></div>
           ) : state === "Sign Up" ? (
             "Create Account"
           ) : (
